@@ -1,0 +1,280 @@
+@font-face {
+    font-family:"Oswald" ;
+    src: url(../../../../Oswald/Oswald-VariableFont_wght.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald";
+    margin: 0px;
+    padding:0%;
+    background: linear-gradient(to right, rgb(139, 2, 2), rgb(9, 9, 92));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #073C4C;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: "Oswald";
+    margin: 0;
+}
+.header-title {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.title-icon {
+    width: 50px; 
+    height: auto; 
+}
+
+h1 {
+    margin: 0; 
+    font-size: 2rem; 
+    color: white; 
+}
+
+nav {
+    background-color: #073C4C;
+    color: white;
+    padding: 10px;
+    border: 20px;
+    text-align: left;
+}
+
+nav > a {
+    color: white;
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    text-align: right;
+}
+nav > a:hover , nav>a:focus {
+    background-color: #27ADAA;
+    outline: none; 
+}
+article {
+    background-image: url('fotografia-danca-indigena-festival-cultura-brasil.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+    border-radius: 10px; 
+    color: white; 
+    height: 300px; 
+    width: 100%; 
+    opacity: 0.8;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+}
+article::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0; 
+        border-radius: 10px; 
+        z-index: -1; 
+    }
+article * {
+    position: relative;
+    z-index: 1; 
+}
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.navigation button:hover,.navigation button:focus{
+    background-color: rgb(0, 0, 0,0.8);
+    
+}
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+}
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.navigation button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.navigation .prev {
+    left: 10px;
+}
+
+.navigation .next {
+    right: 10px;
+}
+
+.navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .carousel-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.carousel-item:hover .carousel-image {
+    transform: scale(1.1);  
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);  
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;  
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-item:hover .carousel-text {
+    opacity: 1;  
+}
+
+.newsletter { 
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+  }
+  
+  .texto h2 {
+    font-size: 1.5em; 
+    color: #ffffff; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 600px; 
+  }
+  
+  .newsletter input[type="email"] {
+    width: 70%; 
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25px; 
+    border: 1px solid #ccc; 
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px 10px;
+    background-color: #073C4C; 
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .newsletter button:hover {
+    background-color: #27ADAA;
+}
+  
+footer {
+    background-color: #2c3e50; 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content .contact-info p {
+    margin: 10px 0;
+}
